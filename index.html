@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Pessoal | Pablo</title>
+  <title>Pablo Henrique</title>
+
   <style>
     * {
       margin: 0;
@@ -11,95 +12,56 @@
       box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
     }
+
     body {
       background: #0f0f0f;
-      color: #fff;
-      line-height: 1.6;
-    }
-    header {
+      color: #ffffff;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: linear-gradient(135deg, #000, #1a1a1a);
     }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #aaa;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      border-left: 4px solid #fff;
-      padding-left: 10px;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #1a1a1a;
+
+    .container {
+      max-width: 700px;
       padding: 20px;
-      border-radius: 8px;
-      transition: transform 0.3s;
+      animation: fadeIn 1.5s ease;
     }
-    .card:hover {
-      transform: translateY(-5px);
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
     }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #000;
-      color: #777;
+
+    p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div>
-      <h1>Pablo Henrique</h1>
-      <p>Site pessoal • Ideias • Projetos • Visão</p>
-    </div>
-  </header>
-
-  <section>
-    <h2>Sobre mim</h2>
+  <div class="container">
+    <h1>Quem é Pablo Henrique?</h1>
     <p>
-      Sou uma pessoa direta, curiosa e focada em evolução pessoal. Gosto de aprender, criar projetos e questionar o sistema. Este site é meu espaço pessoal para registrar ideias, metas e trabalhos.
+      Eu mesmo me faço essa pergunta todos os dias.<br><br>
+      Este site é o meu espaço — onde ideias, pensamentos e caminhos se cruzam.<br><br>
+      <strong>Seja bem-vindo ao meu mundo.</strong>
     </p>
-  </section>
-
-  <section>
-    <h2>O que eu faço</h2>
-    <div class="cards">
-      <div class="card">Tecnologia e Informática</div>
-      <div class="card">Projetos Criativos</div>
-      <div class="card">Estudos e Desenvolvimento Pessoal</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contato</h2>
-    <p>
-      Em breve redes sociais e formas de contato.
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2025 • Site pessoal</p>
-  </footer>
+  </div>
 
 </body>
 </html>
